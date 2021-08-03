@@ -58,15 +58,42 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
-
+  let lastItem = array[array.length-1]; // create a variable to store the item
+  return lastItem;
+  //return lastItem for empty array
 }
+let ballot = ['charlie', 'alice', 'bob']
+console.log('Test - should say "bob"', getLast(ballot));
+let empty = '';
+console.log('Test - should say undefined', getLast(empty));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-
+  let x;
+    if (x = 1) {
+      for (let i = 0; i > array.length; i++) {
+        if (i = value) {
+          x = 1;
+        }
+        else {
+        x = 0;
+        }
+      }
+      return true;
+    }
+    else if (x = 0 ) {
+      return false;
+    }
 }
+
+let numbers = [2, 3, 4, 5, 6]
+console.log('Test - should say True ', find(5, numbers));
+console.log('Test - should say False ', find(1, numbers));
+
+  // Using for of loop
+
 
 // ----------------------
 // Stretch Goals
