@@ -19,8 +19,8 @@ function helloName( name ) {
   return 'Hello ' + name + '!';
 }
 
-console.log(helloName('Jordan'));
 // Remember to call the function to test
+console.log('Test - should say "Hello Jordan!"', helloName('Jordan'));
 
 
 // 3. Function to add two numbers together & return the result
@@ -29,22 +29,24 @@ function addNumbers( firstNumber, secondNumber ) {
   return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
 }
-console.log("Sum: ", addNumbers(34, 25));
+console.log("Test - should give the sum of 35 and 25: ", addNumbers(34, 25));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
-
+function multiplyThree( num1, num2, num3 ){
+  console.log("in multiplyThree", num1, num2, num3);
+  let answer = num1 * num2 * num3; // creating a variable to return
+  return answer;
+} // return num1 * num2 * num3
+console.log('Test - should say the multiple of 56, 892, and 3.451: ', multiplyThree(56, 892, 3.451));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
