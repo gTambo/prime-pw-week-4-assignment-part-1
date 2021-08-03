@@ -16,17 +16,20 @@ console.log('Test - should say "Hello World!"', hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
   console.log('in helloName', name);
-  return `Hello ${name}!`;
+  return 'Hello ' + name + '!';
 }
-let name = "Jordan";
-console.log(helloName(name));
+
+console.log(helloName('Jordan'));
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
+  console.log('In addNumbers ', firstNumber, secondNumber);
+  return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
 }
+console.log("Sum: ", addNumbers(34, 25));
 
 
 // 4. Function to multiply three numbers & return the result
