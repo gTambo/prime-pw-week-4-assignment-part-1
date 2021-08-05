@@ -125,7 +125,7 @@ function positiveArray( array ) {
   // loop through given array, checking for positives
   for (let i of array) {
     if (i > 0){
-      newArray.push(i); // positives go to end of newArray
+      console.log(`adding positive number: ${i}, positiveArray size: ${newArray.push(i)}`); // positives go to end of newArray
     }
   }
   return newArray;
@@ -133,7 +133,7 @@ function positiveArray( array ) {
 let sampleNumbers = [-500, -15, 0, 17, 22, -18, 201];
 console.log('Test - should say length of new array, 3', positiveArray(sampleNumbers));
 let negativesOnly = [-2, 0, -4, -6];
-console.log('Test - should show an empty array', positiveArray(negativesOnly));
+console.log('Testing on array with no positives - should show an empty array', positiveArray(negativesOnly));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
